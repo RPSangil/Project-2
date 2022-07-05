@@ -1,0 +1,865 @@
+﻿﻿<?xml version="1.0"?>
+<ss:Workbook xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+<ss:Styles>
+<ss:Style ss:ID="Default">
+<ss:Alignment ss:Horizontal="Left"/>
+</ss:Style>
+<ss:Style ss:ID="wraptext">
+<ss:Alignment ss:Horizontal="Left" ss:WrapText="1"/>
+<ss:Font ss:Italic="1"/>
+</ss:Style>
+<ss:Style ss:ID="disclaimer">
+<ss:Alignment ss:Vertical="Top" ss:WrapText="1"/>
+</ss:Style>
+<ss:Style ss:ID="DefaultHyperlink">
+<ss:Alignment ss:Vertical="Center" ss:WrapText="1"/>
+<ss:Font ss:Color="#0000FF" ss:Underline="Single" />
+</ss:Style>
+<ss:Style ss:ID="headerstyle">
+<ss:Font ss:Bold="1" />
+</ss:Style>
+<ss:Style ss:ID="Date">
+<ss:NumberFormat ss:Format="dd\-mmm\-yyyy"/>
+</ss:Style>
+<ss:Style ss:ID="Left">
+<ss:Alignment ss:Horizontal="Left"/>
+<ss:NumberFormat ss:Format="Standard"/>
+</ss:Style>
+<ss:Style ss:ID="Right">
+<ss:Alignment ss:Horizontal="Right"/>
+<ss:NumberFormat ss:Format="Standard"/>
+</ss:Style>
+</ss:Styles>
+<ss:Worksheet ss:Name="Overview">
+<ss:Table>
+<ss:Row >
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">BlackRock Appreciation Strategy Fund (Aust)</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row/>
+<ss:Row ss:Height="50">
+<ss:Cell ss:MergeAcross="11" ss:StyleID="wraptext">
+<ss:Data ss:Type="String"><p>The Fund aims to seek, over time, to achieve net returns commensurate with the long-run return on public equities with half the volatility of and low beta to the public equity markets.<br /><br />In seeking its investment objective the Fund invests substantially all of its assets in shares of the BlackRock Appreciation Strategy Fund, Ltd.</p></ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row/>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Size of Class (Millions)</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="String">AUD 0.05</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Base Currency</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">AUD</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Share Class Currency</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">AUD</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Performance Start Date</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">03-Feb-2020</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Asset Class</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">Multi Asset</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Domicile</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">Australia</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">Distribution Frequency</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">-</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell>
+<ss:Data ss:Type="String">APIR</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">BLK2342AU</ss:Data>
+</ss:Cell>
+</ss:Row>
+</ss:Table>
+</ss:Worksheet>
+<ss:Worksheet ss:Name="Historical Prices">
+<ss:Table>
+<ss:Row>
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">As Of</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">Buy Price</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">NAV (Dollars-Per-Unit, AUD)</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">Sell Price</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Jun-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.076294</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.076294</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.076294</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-May-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.076294</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.076294</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.076294</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">02-May-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089258</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089258</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089258</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">29-Apr-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089258</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089258</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089258</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Apr-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.080624</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.080624</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.080624</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Mar-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.080624</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.080624</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.080624</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Mar-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.082463</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.082463</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.082463</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">28-Feb-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.082463</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.082463</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.082463</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Feb-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.078205</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.078205</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.078205</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Jan-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.078205</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.078205</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.078205</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">04-Jan-2022</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.087238</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.087238</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.087238</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Dec-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.087238</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.087238</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.087238</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Dec-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089083</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089083</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089083</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Nov-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089083</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089083</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.089083</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Nov-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.086197</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.086197</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.086197</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">29-Oct-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.086197</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.086197</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.086197</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Oct-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.083268</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.083268</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.083268</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Sep-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.083268</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.083268</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.083268</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Sep-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.069078</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.069078</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.069078</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Aug-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.069078</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.069078</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.069078</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">02-Aug-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.057065</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.057065</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.057065</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Jul-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.057065</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.057065</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.057065</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Jul-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.054819</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.054819</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.054819</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Jun-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.054819</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.054819</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.054819</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Jun-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.048582</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.048582</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.048582</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-May-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.048582</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.048582</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.048582</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">03-May-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.053755</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.053755</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.053755</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Apr-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.053755</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.053755</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.053755</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Apr-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.034447</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.034447</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.034447</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Mar-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.034447</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.034447</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.034447</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Mar-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.032887</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.032887</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.032887</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">26-Feb-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.032887</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.032887</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.032887</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Feb-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.01567</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.01567</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.01567</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">29-Jan-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.01567</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.01567</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.01567</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">04-Jan-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.023331</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.023331</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.023331</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Dec-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.023331</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.023331</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1.023331</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Dec-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Nov-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">02-Nov-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Oct-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Oct-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Sep-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Sep-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Aug-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Jul-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Jun-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Jun-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">29-May-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">01-Apr-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">31-Mar-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">03-Feb-2020</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">1</ss:Data>
+</ss:Cell>
+</ss:Row>
+</ss:Table>
+</ss:Worksheet>
+<ss:Worksheet ss:Name="Distributions">
+<ss:Table>
+<ss:Row>
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">Ex-Date</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="headerstyle">
+<ss:Data ss:Type="String">CPU</ss:Data>
+</ss:Cell>
+</ss:Row>
+<ss:Row>
+<ss:Cell ss:StyleID="Left">
+<ss:Data ss:Type="String">30-Jun-2021</ss:Data>
+</ss:Cell>
+<ss:Cell ss:StyleID="Right">
+<ss:Data ss:Type="Number">0</ss:Data>
+</ss:Cell>
+</ss:Row>
+</ss:Table>
+</ss:Worksheet>
+</ss:Workbook>
