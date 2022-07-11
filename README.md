@@ -36,6 +36,8 @@ This project will use machine learning to do 2 main actions:
 ### Clean-up and Exploration
 
 `<insert steps taken during data cleaning and APIs used. Note any difficulties>`
+- We found that the duration of the ETFs varied
+- we found that iShares Core Cash ETF had a long run of 0 from 31/1/21 to 31/3/22.
 
 ## Model Training
 
@@ -56,10 +58,13 @@ This project will use machine learning to do 2 main actions:
 ![this is an image of an issue we encountered](this is a link)
 
 - `<insert list of difficulties encountered>`
+- step one > pre processing for the unsupervised learning turned out more complex than we had expected
+- we could no locate an API for Blackrock so we manually grabbed the excel files and merged them
 
 ### Future opportunities
 
 - `<insert list of opportunities or future directions this project could have taken if given more time>`
+- talk about other possibilities for the unsupervised learning (different features across different models to check and confirm if this affects our list of "best performers")
 
 # Reference list
 
