@@ -8,36 +8,102 @@
 
 ## Project Description
 
+### Background Information
+
 An exchange-traded fund (ETF) is a type of pooled investment security that operates much like a mutual fund. Typically, ETFs will track a particular index, sector, commodity, or other asset, but unlike mutual funds, ETFs can be purchased or sold on a stock exchange the same way that a regular stock can. An ETF can be structured to track anything from the price of an individual commodity to a large and diverse collection of securities. ETFs can even be structured to track specific investment strategies.[<sup>1</sup>](#reference-list)
 
-Known as the "Oracle of Omaha," Warren Buffett is one of the most successful investors of all time. He runs Berkshire Hathaway, which owns more than 60 companies, including insurer Geico, battery maker Duracell and restaurant chain Dairy Queen.[<sup>2</sup>](#reference-list) Berkshire Hathaway is a holding company for a multitude of businesses, including GEICO and Fruit of the Loom. It's run by chair and CEO Warren Buffett. Berkshire Hathaway is headquartered in Omaha, Nebraska. Originally, it was a company comprised of a group of textile milling plants.[<sup>3</sup>](#reference-list)
+BlackRock offers a range of solutions for institutions, financial professionals and individuals across the globe. From shop assistants in your local stores to national organisations and non-profits, BlackRock has helped people take control of their financial security.[<sup>2</sup>](#reference-list)
 
-It’s often said that investing in Berkshire Hathaway is like buying into an exchange-traded fund (ETF). Both offer diversification across industry sectors. But while ETFs are often passively invested, seeking to track a benchmark index, Berkshire Hathaway actively buys stocks and businesses.[<sup>4</sup>](#reference-list)
+iShares ETFs cover a broad range of asset classes, risk profiles and investment outcomes.[<sup>3</sup>](#reference-list)
 
-Machine learning is the concept that a computer program can learn and adapt to new data without human intervention. Machine learning is a field of artificial intelligence (AI) that keeps a computer’s built-in algorithms current regardless of changes in the worldwide economy.[<sup>5</sup>](#reference-list)
+Machine learning is the concept that a computer program can learn and adapt to new data without human intervention. Machine learning is a field of artificial intelligence (AI) that keeps a computer’s built-in algorithms current regardless of changes in the worldwide economy.[<sup>4</sup>](#reference-list)
 
 ### The Scope
 
 This project will use machine learning to do 2 main actions:
 
-1. Review the stocks that Berkshire Hathaway invests into on the US Market and use unsupervised machine learning to determine the top `<insert selected stock amount>` performing stocks of that list.
-2. Use machine learning to automate the decision making process of when to buy and sell these stocks for optimal returns.
+1. Run a unsupervised machine learning model to cluster iShares ETFs on https://www.blackrock.com/au/individual/products/investment-funds.
+2. Use 2 supervised machine learning models to predict if certain iShares ETFs are worth investing into based on percentage cumulative returns.
 
-## Model Summary
+## Model - Unsupervised - K-means
 
-`<insert information about predictive model used for each action listed above and why it was the best choice for the data>`
+K-means clustering is one of the simplest and popular unsupervised machine learning algorithms Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.[<sup>5</sup>](#reference-list)
 
-## Data Cleaning
+### Data Preparation 
 
-### Dependancies
+#### Initial set up
 
-- `<insert list of libraries used and what they were used for>`
+Unfortunately we were unable to access an API for the raw data.
 
-### Clean-up and Exploration
+The raw data for this project was gathered from https://www.blackrock.com/au/individual/products/investment-funds as a group of 36 excel files. To create the csv needed for this project, we manually merged all the excel files together retaining only the returns data and iShares ETF name. This data was then transposed so that the columns were the dates and the iShares were the rows.
 
-`<insert steps taken during data cleaning and APIs used. Note any difficulties>`
-- We found that the duration of the ETFs varied
-- we found that iShares Core Cash ETF had a long run of 0 from 31/1/21 to 31/3/22.
+#### Dependancies
+
+For our Pre Processing, we used the following libraries. Please be sure to pip install them before running `insert perm link to unsupervised pre processing`.
+
+- numpy
+- pandas
+- pathlib
+- matplotlib
+
+#### Pre Processing
+
+As you will see in `insert perm link to unsupervised pre processing`, we sliced the raw data to the last 5 years (30 June 2017 - 30 June 2022). Then we reviewed the data and if any row had less than 3 null values, we willed these values with 0s. Then we dropped the rows that had more than 3 null values.
+
+Standard deviations were calculated for 6 time slices.
+
+- 2017-2022
+- 2017-2018
+- 2018-2019
+- 2019-2020
+- 2020-2021
+- 2021-2022
+
+3 main dataframes were created (last 5 years, last 3 years, last 1 year) and the appropriate standard deviations were auppended as new columns.
+
+The dataframes were then saved as csv files for the model to run through.
+
+#### Clean-up and Exploration
+
+During this process we noticed several curiosities:
+- As not all the iShare ETFs were created at the same time, a slice of the recent years was necessary to avoid excessive null values in our dataframe.
+- In particular iShares Core Cash ETF had a long run of 0 from 31/1/21 to 31/3/22. This may be due to `explore reason`
+
+### Running the Model
+
+#### Dependancies
+
+For our Pre Processing, we used the following libraries. Please be sure to pip install them before running `insert perm link to unsupervised pre processing`.
+
+- pandas
+- pathlib
+- sklearn.cluster
+- warnings
+
+#### Exlopring the Results
+
+The model sucessfully clustered the iShare ETFs into 6 different clusters.
+
+## Model - Unsupervised - `insert model type`
+
+### Data Preparation 
+
+#### Dependancies
+
+For our Pre Processing, we used the following libraries. Please be sure to pip install them before running `insert perm link to unsupervised pre processing`.
+
+- pandas
+- pathlib
+- numpy
+- warnings
+
+#### Pre Processing
+
+As you will see in `insert perm link to supervised pre processing`, we calculated the percentage cumulative returns for each iShares ETF and added this value as a column to the exisiting dataframes. Then we made a new column that provided a `True` or `False` values to determine if the target percentage cumulative returns was met for each iShares ETF.
+
+### Running the Model
+
+#### Dependancies
 
 ## Model Training
 
@@ -69,7 +135,7 @@ This project will use machine learning to do 2 main actions:
 # Reference list
 
 - [<sup>1</sup> https://www.investopedia.com/terms/e/etf.asp](https://www.investopedia.com/terms/e/etf.asp)
-- [<sup>2</sup> https://www.forbes.com/profile/warren-buffett/?sh=615555e04639](https://www.forbes.com/profile/warren-buffett/?sh=615555e04639)
-- [<sup>3</sup> https://www.investopedia.com/terms/b/berkshire-hathaway.asp](https://www.investopedia.com/terms/b/berkshire-hathaway.asp)
-- [<sup>4</sup> https://smartasset.com/investing/how-to-buy-berkshire-hathaway-stock#:~:text=It's%20often%20said%20that%20investing,actively%20buys%20stocks%20and%20businesses.](https://smartasset.com/investing/how-to-buy-berkshire-hathaway-stock#:~:text=It's%20often%20said%20that%20investing,actively%20buys%20stocks%20and%20businesses.)
-- [<sup>5</sup> https://www.investopedia.com/terms/m/machine-learning.asp](https://www.investopedia.com/terms/m/machine-learning.asp)
+- [<sup>2</sup> https://www.blackrock.com/au/individual/about-us/about-blackrock](https://www.blackrock.com/au/individual/about-us/about-blackrock)
+- [<sup>3</sup> https://www.blackrock.com/au](https://www.blackrock.com/au)
+- [<sup>4</sup> https://www.investopedia.com/terms/m/machine-learning.asp](https://www.investopedia.com/terms/m/machine-learning.asp)
+- [<sup>4</sup> https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
