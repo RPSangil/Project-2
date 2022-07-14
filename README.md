@@ -95,7 +95,13 @@ The raw data for this project was gathered from https://www.blackrock.com/au/ind
 4. Calculate Return Average for each time period and add them to the dataframe for each time period slice.
 5. Save each datafram for the time period slices to .csv for later use.
 
+[Pre Processing](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_Pre_Processing.ipynb)
+
 ### Pre Processing the Data for SMV and Logistic Regression
+
+During this part, we analyised the data using Bollinger Band Trading Strategy.[<sup>5</sup>](#reference-list)
+
+[dummy](dummy link)
 
 ### Data Exploration
 
@@ -103,13 +109,11 @@ During this process we noticed several curiosities:
 - As not all the iShare ETFs were created at the same time, a slice of the recent years was necessary to avoid excessive null values in our dataframe.
 - In particular iShares Core Cash ETF had a long run of 0 from 31/1/21 to 31/3/22. This may be due to the ETf being forced to close during this period. The shares inside of the ETF would have been impacted by Covid19 and an alterative would have been made available to customers during this time period.
 
-[Pre Processing](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_Pre_Processing.ipynb)
-
 [Back to Table of Contents](#Table-of-Contents)
 
 ## Unsupervised Model - K-means
 
-K-means clustering is one of the simplest and popular unsupervised machine learning algorithms Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.[<sup>5</sup>](#reference-list)
+K-means clustering is one of the simplest and popular unsupervised machine learning algorithms Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.[<sup>6</sup>](#reference-list)
 
 - [1 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_1_Year_Model.ipynb)
 - [3 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_3_Year_Model.ipynb)
@@ -119,17 +123,15 @@ K-means clustering is one of the simplest and popular unsupervised machine learn
 
 ## Supervised Model- SVM and Logistic Regression
 
-“Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes very well.[<sup>6</sup>](#reference-list)
+“Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes very well.[<sup>7</sup>](#reference-list)
 
-This type of statistical model (also known as logit model) is often used for classification and predictive analytics. Logistic regression estimates the probability of an event occurring, such as voted or didn’t vote, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure.[<sup>7</sup>](#reference-list)
+This type of statistical model (also known as logit model) is often used for classification and predictive analytics. Logistic regression estimates the probability of an event occurring, such as voted or didn’t vote, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure.[<sup>8</sup>](#reference-list)
+
+[dummy](dummy link)
+[dummy](dummy link)
+[dummy](dummy link)
 
 [Back to Table of Contents](#Table-of-Contents)
-
-### Running the Model
-
-#### Exlopring the Results
-
-The model sucessfully clustered the iShare ETFs into 6 different clusters.
 
 ## How did the Models Perform?
 
@@ -151,8 +153,9 @@ The model sucessfully clustered the iShare ETFs into 6 different clusters.
 - [<sup>2</sup> https://www.blackrock.com/au/individual/about-us/about-blackrock](https://www.blackrock.com/au/individual/about-us/about-blackrock)
 - [<sup>3</sup> https://www.blackrock.com/au](https://www.blackrock.com/au)
 - [<sup>4</sup> https://www.investopedia.com/terms/m/machine-learning.asp](https://www.investopedia.com/terms/m/machine-learning.asp)
-- [<sup>5</sup> https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
-- [<sup>6</sup> https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
-- [<sup>7</sup> https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.](https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.)
+- [<sup>5</sup> https://www.youtube.com/watch?v=AIDKh55y64A&t=690s](https://www.youtube.com/watch?v=AIDKh55y64A&t=690s)
+- [<sup>6</sup> https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
+- [<sup>7</sup> https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+- [<sup>8</sup> https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.](https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.)
 
 [Back to Table of Contents](#Table-of-Contents)
