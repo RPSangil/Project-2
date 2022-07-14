@@ -11,14 +11,18 @@ IMPORTANT NOTICE - This content is for informational purposes only, you should n
     * [What is an ETF?](#What-is-an-ETF?)
     * [Who is BlackRock?](#Who-is-BlackRock?)
     * [Why use Machine Learning?](#Why-use-Machine-Learning?)
-    * [Our Goal](#Our-Goal)
-    * [The Process](#The-Process)
-- [How To Use This Project](#How-To-Use-This-Project)
-   * [Dependencies/Libraries](#Dependencies/Libraries)
-   * [Adjust To Your Needs](#Adjust-To-Your-Needs)
-- [Conclusion](#Conclusion)
-   * [How Well Did The Model Perform?](#How-Well-Did-The-Model-Perform?)
-   * [Things We Could Improve on Given Time](#Things-We-Could-Improve-on-Given-Time)
+- [Our Goal](#Our-Goal)
+- [Dependencies/Libraries](#Dependencies/Libraries)
+- [Data Preparation](#Data-Preparation)
+   * [Raw Data](#Raw-Data)
+   * [Pre Processing for K-Means](#Pre-Processing-for-K-Mean)
+   * [Pre Processing the Data for SMV and Logistic Regression](#Pre-Processing-the-Data-for-SMV-and-Logistic-Regression)
+   * [Data Exploration](#Data-Exploration)
+- [Unsupervised Model - K-means](#Unsupervised-Model---K-means)
+- [Supervised Model- SMV and Logistic Regression](#Supervised-Model--SMV-and-Logistic-Regression)
+- [How did the Models Perform?](#How-did-the-Models-Perform?)
+- [Future Opportunities Given Time and Resources](#Future-Opportunities-Given-Time-and-Resources)
+- [Reference list](#Reference-list)
 
 ## Group Members
 
@@ -26,6 +30,8 @@ IMPORTANT NOTICE - This content is for informational purposes only, you should n
 - Declan Morandin
 - Marc Julies
 - Raelyn Sangil
+
+[Back to Table of Contents](#Table-of-Contents)
 
 ## Introduction
 
@@ -43,7 +49,9 @@ iShares ETFs cover a broad range of asset classes, risk profiles and investment 
 
 Machine learning is the concept that a computer program can learn and adapt to new data without human intervention. Machine learning is a field of artificial intelligence (AI) that keeps a computer’s built-in algorithms current regardless of changes in the worldwide economy.[<sup>4</sup>](#reference-list)
 
-By developing a strong and accurate Machine Learning model, it can assist in making profitable trades that are based off of objective Technical Analysis rather than the biased emotional decisions of a human trader. A Machine Learning model that makes automated trades is also much fasterand efficient than a human trader could ever be. It provides an oppotunity to fine tune the approach
+By developing a strong and accurate Machine Learning model, it can assist in making profitable trades that are based off of objective Technical Analysis rather than the biased emotional decisions of a human trader. A Machine Learning model that makes automated trades is also much fasterand efficient than a human trader could ever be. It provides an oppotunity to fine tune the approach.
+
+[Back to Table of Contents](#Table-of-Contents)
 
 ## Our Goal
 
@@ -51,6 +59,8 @@ This project will use machine learning to do 2 main actions:
 
 1. Run an unsupervised machine learning model (K-means) to cluster iShares ETFs on https://www.blackrock.com/au/individual/products/investment-funds.
 2. Use 2 supervised machine learning models (SMV and Logistic Regression) to run through the pre processed data (data was analyised using algorithmic trading).
+
+[Back to Table of Contents](#Table-of-Contents)
 
 ## Dependencies/Libraries
 TO be able to implement and use this code there are some dependencies that will first need to be installed. These include:
@@ -60,6 +70,8 @@ TO be able to implement and use this code there are some dependencies that will 
  - hvplot [https://pypi.org/project/hvplot/](https://pypi.org/project/hvplot/)
  - sklearn [https://pypi.org/project/scikit-learn/](https://pypi.org/project/scikit-learn/)
  - warnings [https://pypi.org/project/pytest-warnings/](https://pypi.org/project/pytest-warnings/)
+
+ [Back to Table of Contents](#Table-of-Contents)
 
 ## Data Preparation 
 
@@ -91,13 +103,27 @@ During this process we noticed several curiosities:
 - As not all the iShare ETFs were created at the same time, a slice of the recent years was necessary to avoid excessive null values in our dataframe.
 - In particular iShares Core Cash ETF had a long run of 0 from 31/1/21 to 31/3/22. This may be due to the ETf being forced to close during this period. The shares inside of the ETF would have been impacted by Covid19 and an alterative would have been made available to customers during this time period.
 
-## Model - Unsupervised - K-means
+[Pre Processing](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_Pre_Processing.ipynb)
+
+[Back to Table of Contents](#Table-of-Contents)
+
+## Unsupervised Model - K-means
 
 K-means clustering is one of the simplest and popular unsupervised machine learning algorithms Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.[<sup>5</sup>](#reference-list)
 
-## Model - Supervised - SMV and Logistic Regression
+- [1 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_1_Year_Model.ipynb)
+- [3 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_3_Year_Model.ipynb)
+- [5 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_5_Year_Model.ipynb)
+
+[Back to Table of Contents](#Table-of-Contents)
+
+## Supervised Model- SVM and Logistic Regression
 
 “Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes very well.[<sup>6</sup>](#reference-list)
+
+This type of statistical model (also known as logit model) is often used for classification and predictive analytics. Logistic regression estimates the probability of an event occurring, such as voted or didn’t vote, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure.[<sup>7</sup>](#reference-list)
+
+[Back to Table of Contents](#Table-of-Contents)
 
 ### Running the Model
 
@@ -105,38 +131,19 @@ K-means clustering is one of the simplest and popular unsupervised machine learn
 
 The model sucessfully clustered the iShare ETFs into 6 different clusters.
 
-## Model - Unsupervised - `insert model type`
-
-### Running the Model
-
-#### Dependancies
-
-## Model Training
-
-`<Discuss the overall training process and highlight anything of interest with the training process>`
-
-## Model Evaluation
-
-`<insert screenshots of code showing how the model performance was evaluated and discuss the techniques used>`
-
-## Conclusions
+## How did the Models Perform?
 
 `<Discuss your findings. Was the model sufficient for the predictive task? If not, why not? What inferences or general conclusions can you draw from your model performance?>`
 
-## Room for Improvement
+[Back to Table of Contents](#Table-of-Contents)
 
-### Difficulties
+## Future Opportunities Given Time and Resources
 
-![this is an image of an issue we encountered](this is a link)
+- The data that the K-means model was run through is simplified. K-means was specifically used to create the clusters to be analysied in a supervised learning model. We understand that K-means should be used for more complex data, however, given the time contraints we were unable to plot the more complex data and therefor used the simplified data.
+- Each time the K-means model is run, the names of the clusters changed. The contents remained the same though. Given more time, we would have adjusted this so that the clusters remained fixed.
+- Due to the above issue, the selection of the cluster needed to be done manually each time. Given more time, we would have automated the selection of the cluster and controlled that change.
 
-- `<insert list of difficulties encountered>`
-- step one > pre processing for the unsupervised learning turned out more complex than we had expected
-- we could no locate an API for Blackrock so we manually grabbed the excel files and merged them
-
-### Future opportunities
-
-- `<insert list of opportunities or future directions this project could have taken if given more time>`
-- talk about other possibilities for the unsupervised learning (different features across different models to check and confirm if this affects our list of "best performers")
+[Back to Table of Contents](#Table-of-Contents)
 
 # Reference list
 
@@ -145,4 +152,7 @@ The model sucessfully clustered the iShare ETFs into 6 different clusters.
 - [<sup>3</sup> https://www.blackrock.com/au](https://www.blackrock.com/au)
 - [<sup>4</sup> https://www.investopedia.com/terms/m/machine-learning.asp](https://www.investopedia.com/terms/m/machine-learning.asp)
 - [<sup>5</sup> https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
-- - [<sup>6</sup> https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+- [<sup>6</sup> https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+- [<sup>7</sup> https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.](https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.)
+
+[Back to Table of Contents](#Table-of-Contents)
