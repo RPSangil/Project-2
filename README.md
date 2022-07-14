@@ -26,10 +26,10 @@ IMPORTANT NOTICE - This content is for informational purposes only, you should n
 
 ## Group Members
 
-- Maggie Zhan (L)
+- Raelyn Sangil (L)
+- Maggie Zhan
 - Declan Morandin
 - Marc Julies
-- Raelyn Sangil
 
 [Back to Table of Contents](#Table-of-Contents)
 
@@ -55,6 +55,8 @@ By developing a strong and accurate Machine Learning model, it can assist in mak
 
 ## Our Goal
 
+Our group treated this assignment as an opportunity to show how far we’ve come. What if a client in the future wanted us to create a very specific portfolio for them, using certain instruments that meet a certain level of risk and return values for BlackRock iShares ETFs?
+
 This project will use machine learning to do 2 main actions:
 
 1. Run an unsupervised machine learning model (K-means) to cluster iShares ETFs on https://www.blackrock.com/au/individual/products/investment-funds.
@@ -64,12 +66,13 @@ This project will use machine learning to do 2 main actions:
 
 ## Dependencies/Libraries
 TO be able to implement and use this code there are some dependencies that will first need to be installed. These include:
- - NumPy [https://pypi.org/project/numpy/](https://pypi.org/project/numpy/)
- - pandas [https://pypi.org/project/pandas/](https://pypi.org/project/pandas/)
- - pathlib [https://pypi.org/project/pathlib/](https://pypi.org/project/pathlib/)
- - hvplot [https://pypi.org/project/hvplot/](https://pypi.org/project/hvplot/)
- - sklearn [https://pypi.org/project/scikit-learn/](https://pypi.org/project/scikit-learn/)
- - warnings [https://pypi.org/project/pytest-warnings/](https://pypi.org/project/pytest-warnings/)
+ - NumPy [Installation instructions](https://pypi.org/project/numpy/)
+ - pandas [Installation instructions](https://pypi.org/project/pandas/)
+ - pathlib [Installation instructions](https://pypi.org/project/pathlib/)
+ - hvplot [Installation instructions](https://pypi.org/project/hvplot/)
+ - sklearn [Installation instructions](https://pypi.org/project/scikit-learn/)
+ - warnings [Installation instructions](https://pypi.org/project/pytest-warnings/)
+ - plotly [Installation instructions](https://pypi.org/project/plotly/)
 
  [Back to Table of Contents](#Table-of-Contents)
 
@@ -95,13 +98,15 @@ The raw data for this project was gathered from https://www.blackrock.com/au/ind
 4. Calculate Return Average for each time period and add them to the dataframe for each time period slice.
 5. Save each datafram for the time period slices to .csv for later use.
 
-[Pre Processing](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_Pre_Processing.ipynb)
+[Pre Processing](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Unsupervised/Unsupervised_Pre_Processing.ipynb)
 
 ### Pre Processing the Data for SMV and Logistic Regression
 
-During this part, we analyised the data using Bollinger Band Trading Strategy.[<sup>5</sup>](#reference-list)
+Due to a not having access to an API, the processing for this section was primarily completed via excel. During the process, we grabbed raw data from https://www.blackrock.com/au/individual/products/investment-funds for each of the iShare ETFs in the selected clusters for 1 year, 3 year and 5 year portfolios. We merged these files together, dropped the unnecessary data and calculated averages for costs and volume.
 
-[dummy](dummy link)
+[Cost and volume 1 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_1yr.csv)
+[Cost and volume 3 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_3yr.csv)
+[Cost and volume 5 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_5yr.csv)
 
 ### Data Exploration
 
@@ -113,29 +118,45 @@ During this process we noticed several curiosities:
 
 ## Unsupervised Model - K-means
 
-K-means clustering is one of the simplest and popular unsupervised machine learning algorithms Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.[<sup>6</sup>](#reference-list)
+K-means clustering is one of the simplest and popular unsupervised machine learning algorithms Typically, unsupervised algorithms make inferences from datasets using only input vectors without referring to known, or labelled, outcomes. The objective of K-means is simple: group similar data points together and discover underlying patterns. To achieve this objective, K-means looks for a fixed number (k) of clusters in a dataset.[<sup>5</sup>](#reference-list)
 
-- [1 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_1_Year_Model.ipynb)
-- [3 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_3_Year_Model.ipynb)
-- [5 year K-means](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_5_Year_Model.ipynb)
+- [K-means 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Unsupervised/Unsupervised_1_Year_Model.ipynb)
+- [K-means 3 year](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_3_Year_Model.ipynb)
+- [K-means 5 year](https://github.com/RaelynSangil/Project-2/blob/41ff280da7d0d2be446952b01d7f530fe8061a38/Code/Unsupervised/Unsupervised_5_Year_Model.ipynb)
 
 [Back to Table of Contents](#Table-of-Contents)
 
 ## Supervised Model- SVM and Logistic Regression
 
-“Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes very well.[<sup>7</sup>](#reference-list)
+“Support Vector Machine” (SVM) is a supervised machine learning algorithm that can be used for both classification or regression challenges. However,  it is mostly used in classification problems. In the SVM algorithm, we plot each data item as a point in n-dimensional space (where n is a number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiates the two classes very well.[<sup>6</sup>](#reference-list)
 
-This type of statistical model (also known as logit model) is often used for classification and predictive analytics. Logistic regression estimates the probability of an event occurring, such as voted or didn’t vote, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure.[<sup>8</sup>](#reference-list)
+This type of statistical model (also known as logit model) is often used for classification and predictive analytics. Logistic regression estimates the probability of an event occurring, such as voted or didn’t vote, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure.[<sup>7</sup>](#reference-list)
 
-[dummy](dummy link)
-[dummy](dummy link)
-[dummy](dummy link)
+[Data Analysis 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_1yr.ipynb)
+[Data Analysis 3 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_3yr.ipynb)
+[Data Analysis 5 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_5yr.ipynb)
+
+[SVM and LR 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_1yr.ipynb)
+[SVM and LR 3 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_3yr.ipynb)
+[SVM and LR 5 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_5yr.ipynb)
 
 [Back to Table of Contents](#Table-of-Contents)
 
 ## How did the Models Perform?
 
-`<Discuss your findings. Was the model sufficient for the predictive task? If not, why not? What inferences or general conclusions can you draw from your model performance?>`
+Our K-means model sucessfully splits the data into clusters. We chose how many clusters to use in the model when running the data for each time slice by plotting an elbow curve. We found that the amount of clusters varied:
+
+- The 1 year time slice performed best with 6 clusters.
+- The 3 year time slice performed best with 6 clusters.
+- The 5 year time slice performed best with 5 clusters.
+
+Looking at the clusters we were able to clearly determine the cluster which had a moderate return and moderate variance.
+
+Our SVM model had an accuracy of 0.56. This could have been improved upon given more time.
+
+Our Logistic Regression model trained well with an accuracy of 0.63 however when test data was run through only had an accuracy of 0.40. This could ahve been improved upon given more time.
+
+The Bollinger Bands trading strategy that we explored showed room for profit. This could have been improved upon with more complex data.
 
 [Back to Table of Contents](#Table-of-Contents)
 
@@ -145,6 +166,8 @@ This type of statistical model (also known as logit model) is often used for cla
 - Each time the K-means model is run, the names of the clusters changed. The contents remained the same though. Given more time, we would have adjusted this so that the clusters remained fixed.
 - Due to the above issue, the selection of the cluster needed to be done manually each time. Given more time, we would have automated the selection of the cluster and controlled that change.
 
+In the [Archives folder](https://github.com/RaelynSangil/Project-2/tree/main/Code/Archived) You'll find various working codes that were explored but due to time constraints were unable to be presented and included in the finished product. 
+
 [Back to Table of Contents](#Table-of-Contents)
 
 # Reference list
@@ -153,9 +176,8 @@ This type of statistical model (also known as logit model) is often used for cla
 - [<sup>2</sup> https://www.blackrock.com/au/individual/about-us/about-blackrock](https://www.blackrock.com/au/individual/about-us/about-blackrock)
 - [<sup>3</sup> https://www.blackrock.com/au](https://www.blackrock.com/au)
 - [<sup>4</sup> https://www.investopedia.com/terms/m/machine-learning.asp](https://www.investopedia.com/terms/m/machine-learning.asp)
-- [<sup>5</sup> https://www.youtube.com/watch?v=AIDKh55y64A&t=690s](https://www.youtube.com/watch?v=AIDKh55y64A&t=690s)
-- [<sup>6</sup> https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
-- [<sup>7</sup> https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
-- [<sup>8</sup> https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.](https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.)
+- [<sup>5</sup> https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1)
+- [<sup>6</sup> https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+- [<sup>7</sup> https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.](https://www.ibm.com/au-en/topics/logistic-regression#:~:text=Logistic%20regression%20estimates%20the%20probability,bounded%20between%200%20and%201.)
 
 [Back to Table of Contents](#Table-of-Contents)
