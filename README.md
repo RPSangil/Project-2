@@ -104,9 +104,9 @@ The raw data for this project was gathered from https://www.blackrock.com/au/ind
 
 Due to a not having access to an API, the processing for this section was primarily completed via excel. During the process, we grabbed raw data from https://www.blackrock.com/au/individual/products/investment-funds for each of the iShare ETFs in the selected clusters for 1 year, 3 year and 5 year portfolios. We merged these files together, dropped the unnecessary data and calculated averages for costs and volume.
 
-[Cost and volume 1 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_1yr.csv)
-[Cost and volume 3 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_3yr.csv)
-[Cost and volume 5 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_5yr.csv)
+- [Cost and volume 1 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_1yr.csv)
+- [Cost and volume 3 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_3yr.csv)
+- [Cost and volume 5 year](https://github.com/RaelynSangil/Project-2/blob/2563498aadc4e5dbf3ef8d9f8d50c9368c645078/Data/ETF%20CSV%20files/Cost_and_volume_5yr.csv)
 
 ### Data Exploration
 
@@ -132,13 +132,13 @@ K-means clustering is one of the simplest and popular unsupervised machine learn
 
 This type of statistical model (also known as logit model) is often used for classification and predictive analytics. Logistic regression estimates the probability of an event occurring, such as voted or didn’t vote, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1. In logistic regression, a logit transformation is applied on the odds—that is, the probability of success divided by the probability of failure.[<sup>7</sup>](#reference-list)
 
-[Data Analysis 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_1yr.ipynb)
-[Data Analysis 3 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_3yr.ipynb)
-[Data Analysis 5 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_5yr.ipynb)
+- [Data Analysis 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_1yr.ipynb)
+- [Data Analysis 3 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_3yr.ipynb)
+- [Data Analysis 5 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Data_Analysis_5yr.ipynb)
 
-[SVM and LR 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_1yr.ipynb)
-[SVM and LR 3 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_3yr.ipynb)
-[SVM and LR 5 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_5yr.ipynb)
+- [SVM and LR 1 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_1yr.ipynb)
+- [SVM and LR 3 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_3yr.ipynb)
+- [SVM and LR 5 year](https://github.com/RaelynSangil/Project-2/blob/3f0a1052ec5efebb0c01f905d7e5d2ed6bc5d23c/Code/Supervised/Supervised_5yr.ipynb)
 
 [Back to Table of Contents](#Table-of-Contents)
 
